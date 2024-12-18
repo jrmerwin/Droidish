@@ -1,2 +1,2 @@
-# droidspeak
-Droidspeak encoder and decoder code
+# Droidish
+A Droidspeak-like encoder and decoder 
