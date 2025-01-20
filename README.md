@@ -5,3 +5,8 @@ The encoding of English sentences into Droidish uses two overlapping systems. On
 The second system is like the first, but it uses a dictionary that maps characters to single tones, so that it can spell out any words that are not already defined in the first system. The encoder then adds distinct signals to the sentence indicating which system is being used. This allows the decoder to switch from system to system as it works through the sentence. A whistle is used to indicate the word-based encoding system should be used while a chirp is used to indicate the character system. For purely aesthetic reasons, I added a random number of whistles (up to 3) to be used as the signal.
 
 I wrote a Medium article about the project [here](https://medium.com/@merwijas/the-utility-of-droidspeak-16ad4416d003)
+
+# LD-1
+Operating System for RBPi Droid (**L**LM **D**roid - 1)
+
+This .py file should be run on the RBPi 5 powering the droid. I will be uploading a droid construction here guide soon. The LD-1 model requires a mic for Audio TTS input to receive verbal commands, and speaker for the LLM reponse aloud in Droidish, and a screen to the text translation, first in Aerobesh and then in English. The LLM used is OpenAI Chat GPT but a local LLM running on the pi works as well, just gives slow responses because it's running concurrently with vsok tts model. RPBi 5 16GB will likely not have that problem and I will use a local ollama model. A local LLM is better because it allows for offline use, memory systems, and retraining or reinforcement learning to improve the Droid LLM. If you have questions please contact me or post in the repo discussion.
